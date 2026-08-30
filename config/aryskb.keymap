@@ -9,6 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/rgb.h>
+
+
 
 / {
         keymap {
@@ -19,11 +22,11 @@
                         bindings = <
 
 
-&kp GRAVE           &kp N1          &kp N2          &kp N3          &kp N4              &kp N5          &kp N6              &kp N7          &kp N8              &kp N9          &kp N0         &rgb_ug RGB_TOG          &rgb_ug RGB_ON         &rgb_ug RGB_BRI        /*   &kp MINUS       &kp EQUAL       &kp BSLH        */
+&kp GRAVE           &kp N1          &kp N2          &kp N3          &kp N4              &kp N5          &kp N6              &kp N7          &kp N8              &kp N9          &kp N0            &kp MINUS       &kp EQUAL       &kp BSLH        
 &kp TAB         &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P           &kp BSPC            &kp LBKT        &kp RBKT        &kp HOME        
 &mo 1               &kp A           &kp S           &kp D           &kp F           &kp G           &kp H           &kp J           &kp K           &kp L                   &kp RET                 &kp SEMI        &kp SQT         &kp PAGE_UP     
 &kp LSHFT                   &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &mt RSHFT DOT       &kp UP              &kp FSLH        &kp DOT         &kp PAGE_DOWN   
-&tdsw               &kp LCMD            &kp LCTRL           &kp SPACE               &kp SPACE       &kp SPACE           &kp SPACE           &mo 2               &kp LEFT        &kp DOWN        &kp RIGHT           &kp EQUAL       &kp END         
+&tdsw               &kp LCMD            &kp LCTRL           &kp SPACE            &rgb_ug RGB_TOG          &rgb_ug RGB_ON         &rgb_ug RGB_BRI          &mo 2               &kp LEFT        &kp DOWN        &kp RIGHT           &kp EQUAL       &kp END         
 
                         
                         >;
@@ -36,7 +39,7 @@
 
 &kp ESC             &kp F1          &kp F2          &kp F3          &kp F4              &kp F5          &kp F6              &kp F7          &kp F8              &kp F9          &kp F10             &kp F11         &kp F12         &none           
 &none           &none           &kp PAGE_UP     &kp UP          &kp PAGE_DOWN   &none           &none          &none        &none          &none           &none           &kp BSPC            &kp DEL         &none           &trans          
-&trans              &none           &kp LEFT        &kp DOWN        &kp RIGHT       &none           &none           &none           &none           &none                   &kp RET                 &none           &none           &trans          
+&trans              &none           &kp LEFT        &kp DOWN        &kp RIGHT       &none           &none           &none           &none           &none                   &kp RET                       &none           &none           &trans          
 &trans                      &kp HOME        &kp DOWN        &kp END         &none           &none           &none           &none           &none           &none               &kp UP              &none           &none           &trans          
 &trans              &trans              &trans              &trans                  &trans          &trans              &trans              &trans              &kp LEFT        &kp DOWN        &kp RIGHT           &none           &trans          
 
